@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+  background-color: #f0f0f0;
+}
+
+.panel-default{
+  text-align: center;
+}
+
+.container, .highlightTextarea {
+  width: 100%;
+  resize: both;
+
+}
+
+
+.highlightTextarea-container, textarea {
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  font: 20px/28px 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  overflow: auto;
+}
+
+
+.container {
+  display: block;
+  margin: 0 auto;
+  transform: translateZ(0);
+  -webkit-text-size-adjust: none;
+}
+
+
+textarea {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  border: 2px solid #74637f;
+  border-radius: 0;
+  color: #444;
+  background-color: transparent;
+  overflow: auto;
+  resize: none;
+  transition: transform 1s;
+}
+
+#aes-wrap mark {
+  border-radius: 3px;
+  color: transparent;
+  padding:0 3px;
+  margin:0 -3px;
+  border-radius:0.5em;
+  background-color:#b0b0c7 !important;
+}
+#aes-wrap2 mark {
+  border-radius: 3px;
+  color: transparent;
+  padding:0 3px;
+  margin:0 -3px;
+  border-radius:0.5em;
+  background-color:#9229FF !important;
+}
+
+button {
+  display: block;
+  width: 100px;
+  margin: 30px auto 0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #74637f;
+  font: 18px 'Opens Sans', sans-serif;
+  letter-spacing: 1px;
+  appearance: none;
+  cursor: pointer;
+}
+
+
+textarea:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #c6aada;
+}
